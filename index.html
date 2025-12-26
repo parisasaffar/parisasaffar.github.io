@@ -880,6 +880,311 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        /* Enhanced Responsive Design */
+        @media (max-width: 1200px) {
+            .hero-content {
+                gap: 4rem;
+            }
+
+            .image-container {
+                width: 400px;
+                height: 500px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            nav {
+                padding: 1.5rem 3%;
+            }
+
+            .nav-links {
+                gap: 1.5rem;
+            }
+
+            .nav-links a {
+                font-size: 0.9rem;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 3.5rem;
+            }
+
+            .hero-text .description {
+                font-size: 1rem;
+            }
+
+            .cta-buttons {
+                justify-content: center;
+            }
+
+            .image-container {
+                width: 350px;
+                height: 450px;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .research-grid {
+                grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline-item {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .timeline-item:nth-child(even) .timeline-content,
+            .timeline-item:nth-child(even) .timeline-date {
+                grid-column: 1;
+                text-align: left;
+            }
+
+            .experience-timeline::before {
+                left: 10px;
+            }
+
+            .timeline-dot {
+                left: 10px;
+                transform: translateX(-50%);
+            }
+
+            .timeline-content {
+                margin-left: 3rem;
+            }
+
+            .timeline-date {
+                margin-left: 3rem;
+                order: -1;
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 5rem 4%;
+            }
+
+            nav {
+                padding: 1rem 4%;
+            }
+
+            .nav-links {
+                display: none; /* Consider adding hamburger menu */
+            }
+
+            .logo {
+                font-size: 1.3rem;
+            }
+
+            .hero-text h1 {
+                font-size: 2.8rem;
+                line-height: 1.2;
+            }
+
+            .hero-text .tagline {
+                font-size: 1.2rem;
+            }
+
+            .hero-text .greeting {
+                font-size: 1rem;
+            }
+
+            .image-container {
+                width: 300px;
+                height: 400px;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+            }
+
+            .interests {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+            }
+
+            .research-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .research-card {
+                padding: 2rem;
+            }
+
+            .research-card h3 {
+                font-size: 1.5rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-image {
+                height: 200px;
+                font-size: 2.5rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skill-category {
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            section {
+                padding: 4rem 5%;
+            }
+
+            .hero-text h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-text .tagline {
+                font-size: 1rem;
+            }
+
+            .hero-text .description {
+                font-size: 0.95rem;
+            }
+
+            .image-container {
+                width: 250px;
+                height: 350px;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .section-subtitle {
+                font-size: 0.95rem;
+                margin-bottom: 2rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-card {
+                padding: 1.5rem;
+            }
+
+            .research-card,
+            .project-content,
+            .timeline-content,
+            .skill-category {
+                padding: 1.5rem;
+            }
+
+            .research-card h3,
+            .project-card h3 {
+                font-size: 1.3rem;
+            }
+
+            .timeline-content h3 {
+                font-size: 1.4rem;
+            }
+
+            .btn {
+                padding: 0.9rem 2rem;
+                font-size: 0.95rem;
+            }
+
+            .contact-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 1.3rem;
+            }
+
+            .scroll-indicator {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Landscape mobile orientation */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .hero {
+                height: auto;
+                padding: 8rem 4% 4rem;
+            }
+
+            .image-container {
+                width: 280px;
+                height: 380px;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* Fix for very small screens */
+        @media (max-width: 360px) {
+            .hero-text h1 {
+                font-size: 1.8rem;
+            }
+
+            .image-container {
+                width: 220px;
+                height: 320px;
+            }
+
+            .btn {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -889,15 +1194,65 @@
 <!-- Navigation -->
 <nav>
     <div class="logo">PS</div>
-    <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#research" onclick="closeMenu()">Research</a></li>
+        <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+        <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
+        <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
     </ul>
 </nav>
+
+
+<!-- Mobile Menu Toggle (Optional Enhancement) -->
+<style>
+    .mobile-menu-btn {
+        display: none;
+        background: none;
+        border: none;
+        color: var(--accent);
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+        .mobile-menu-btn {
+            display: block;
+        }
+
+        .nav-links {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 70%;
+            height: 100vh;
+            background: var(--primary);
+            flex-direction: column;
+            padding: 6rem 2rem 2rem;
+            transition: right 0.3s ease;
+            border-left: 1px solid rgba(199, 125, 88, 0.2);
+        }
+
+        .nav-links.active {
+            right: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0;
+        }
+
+        .nav-links a {
+            font-size: 1.2rem;
+            padding: 1rem 0;
+            display: block;
+        }
+    }
+</style>
+
 
 <!-- Hero Section -->
 <section class="hero">
@@ -1273,6 +1628,27 @@
 </footer>
 
 <script>
+    // Mobile menu toggle
+    function toggleMenu() {
+        const navLinks = document.getElementById('navLinks');
+        navLinks.classList.toggle('active');
+    }
+
+    function closeMenu() {
+        const navLinks = document.getElementById('navLinks');
+        navLinks.classList.remove('active');
+    }
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        const navLinks = document.getElementById('navLinks');
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+
+        if (!navLinks.contains(e.target) && !menuBtn.contains(e.target)) {
+            navLinks.classList.remove('active');
+        }
+    });
+
     // Smooth scroll for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
